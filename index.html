@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>This is my personal portfolio website.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! My name is Yanis and I am a web development student.</p>
+
+             <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+        </section>
+
+
+        <section id="work">
+            <h2>My Work</h2>
+
+        
+            <ul>
+                <li>Portfolio Website</li>
+                <li>To-do List App</li>
+                <li>Git Project</li>
+            </ul>
+
+            <p>
+                <a href="cv.pdf" download>Download my CV</a>
+            </p>
+        </section>
+
+        <!-- RESUME SECTION -->
+        <section id="resume">
+            <h2>Resume</h2>
+
+            <!-- TABLE -->
+            <table border="1">
+                <tr>
+                    <th>Year</th>
+                    <th>Experience</th>
+                </tr>
+                <tr>
+                    <td>2025</td>
+                    <td>Web Development Student</td>
+                </tr>
+                <tr>
+                    <td>2026</td>
+                    <td>Junior Web Developer</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Send a message</legend>
+
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="40" required></textarea><br><br>
+
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
