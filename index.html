@@ -4,101 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="theme-redblack">
 
-    <header>
-        <nav aria-label="Primary">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <div class="nav-inner">
+                <a class="logo" href="#home">Yanis</a>
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <main>
-
-
-        <section id="home">
-            <h1>Welcome to My Portfolio</h1>
-            <p>This is my personal portfolio website.</p>
+    <main class="page">
+        <section id="home" class="section section--home">
+            <div class="hero">
+                <p class="eyebrow">Creative Developer</p>
+                <h1 class="hero-title">Welcome to My Portfolio</h1>
+                <p class="hero-subtitle">This is my personal portfolio website.</p>
+                <a class="cta" href="#work">View My Work</a>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! My name is Yanis and I am a web development student.</p>
+        <section id="about" class="section section--about">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-text">Hello! My name is Yanis and I am a web development student.</p>
 
-             <video width="320" height="240" controls>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
         </section>
 
-
-        <section id="work">
-            <h2>My Work</h2>
-
-        
-            <ul>
-                <li>Portfolio Website</li>
-                <li>To-do List App</li>
-                <li>Git Project</li>
+        <section id="work" class="section section--work">
+            <h2 class="section-title">My Work</h2>
+            <ul class="work-list">
+                <li class="work-item">Portfolio Website</li>
+                <li class="work-item">To-do List App</li>
+                <li class="work-item">Git Project</li>
             </ul>
 
-            <p>
-                <a href="cv.pdf" download>Download my CV</a>
+            <p class="section-text">
+                <a class="cta cta--ghost" href="cv.pdf" download>Download my CV</a>
             </p>
         </section>
 
-        <!-- RESUME SECTION -->
-        <section id="resume">
-            <h2>Resume</h2>
-
-            <!-- TABLE -->
-            <table border="1">
-                <tr>
-                    <th>Year</th>
-                    <th>Experience</th>
-                </tr>
-                <tr>
-                    <td>2025</td>
-                    <td>Web Development Student</td>
-                </tr>
-                <tr>
-                    <td>2026</td>
-                    <td>Junior Web Developer</td>
-                </tr>
+        <section id="resume" class="section section--resume">
+            <h2 class="section-title">Resume</h2>
+            <table class="resume-table">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Experience</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025</td>
+                        <td>Web Development Student</td>
+                    </tr>
+                    <tr>
+                        <td>2026</td>
+                        <td>Junior Web Developer</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
+        <section id="contact" class="section section--contact">
+            <h2 class="section-title">Contact Me</h2>
 
-            <form action="#" method="post">
+            <form class="contact-form" action="#" method="post">
                 <fieldset>
                     <legend>Send a message</legend>
 
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" cols="40" required></textarea><br><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="40" required></textarea>
 
-                    <button type="submit">Send</button>
+                    <button class="btn" type="submit">Send</button>
                 </fieldset>
             </form>
         </section>
-
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 My Portfolio. All rights reserved.</p>
     </footer>
 
